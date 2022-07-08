@@ -34,8 +34,9 @@ class Round {
     }
    
     endRound() {
-        console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
-        return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
+        let message = `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
+        console.log(message)
+        return message
     }
 }
 module.exports = Round
