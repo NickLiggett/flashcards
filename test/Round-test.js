@@ -29,7 +29,7 @@ describe('Round', () => {
     });
 
     it('should have a method that returns the current Card', () => {
-        expect(round.returnCurrentCard()).to.equal(deck.cardList[0])
+        expect(round.returnCurrentCard()).to.equal(deck.cards[0])
     })
 
     it('should update the turn count regardless of whether the guess is correct or not', () => {
@@ -40,11 +40,11 @@ describe('Round', () => {
         expect(round.turns).to.equal(3)
     })
     it('should cycle through cards in the deck', () => {
-        expect(round.returnCurrentCard()).to.equal(deck.cardList[0])  
+        expect(round.returnCurrentCard()).to.equal(deck.cards[0])  
         round.takeTurn()
-        expect(round.returnCurrentCard()).to.equal(deck.cardList[1]) 
+        expect(round.returnCurrentCard()).to.equal(deck.cards[1]) 
         round.takeTurn()
-        expect(round.returnCurrentCard()).to.equal(deck.cardList[2])
+        expect(round.returnCurrentCard()).to.equal(deck.cards[2])
     })
 
     it('should store the IDs of questions that were answered incorrectly', () => {
@@ -74,9 +74,8 @@ describe('Round', () => {
 
     it('should have a method that prints an end of round message', () => {
         round.takeTurn('object')
-        expect(round.endRound()).to.equal('** Round over! ** You answered 100% of the questions correctly!')
         round.takeTurn('object')
-        expect(round.endRound()).to.equal('** Round over! ** You answered 50% of the questions correctly!')
         round.takeTurn('mutator method')
+        expect(round.endRound()).to.equal('** Round over! ** You answered 67% of the questions correctly!')
     })
 })
