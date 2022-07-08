@@ -5,7 +5,7 @@ const Turn = require('../src/Turn');
 const Card = require('../src/Card');
 const Deck = require('../src/Deck');
 
-describe('Deck', function() {
+describe('Deck', () => {
     let card1
     let card2
     let card3
@@ -17,11 +17,11 @@ describe('Deck', function() {
         deck = new Deck([card1, card2, card3])
     })
 
-    it('should be an instance of Deck', function() {
+    it('should be an instance of Deck', () => {
         expect(deck).to.be.an.instanceof(Deck);
       });
 
-    it('should know how many cards are in the deck', function() {
+    it('should know how many cards are in the deck', () => {
         expect(deck.countCards()).to.equal(3)
       });
 });
