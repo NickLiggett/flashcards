@@ -9,5 +9,6 @@ Once the repo is cloned to your local storage, simply run node index.js to start
 
 ![2022-07-09 17 20 56](https://user-images.githubusercontent.com/102986835/178126002-5b181a0f-e375-4c2e-ab25-36224c98ca8a.gif)
 
+
 ### Technologies Used
-This program was written on VSCode using JavaScript ES6.
+This program was written on Visual Studio Code using JavaScript ES6.
