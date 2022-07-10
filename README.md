@@ -1,7 +1,7 @@
 
 ## Setup
 - Fork and clone this repo
-- In your terminal, navigate to the flashcards directory by running `cd flashcards`
+- In your terminal, navigate to the flashcards directory
 - run `node index.js` to start the game
 
 ## How to play
